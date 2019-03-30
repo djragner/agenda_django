@@ -2,8 +2,8 @@ from django.db import models
 
 class AgendaPrivada(models.Model):
     class Meta:
-        verbose_name = 'Agenda'
-        verbose_name_plural = 'Agenda'
+        verbose_name = 'Agenda Privada'
+        verbose_name_plural = 'Agenda Privada'
 
     Nome = models.CharField('Nome do médico', max_length=64)
     Compromisso = models.TextField('Tipo de compromisso', max_length=128)
