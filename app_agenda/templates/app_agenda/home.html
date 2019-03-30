@@ -1,0 +1,10 @@
+<h1>Agenda Publica</h1>
+{% for AgendaPublica in object_list %}
+		<div>
+			<h2>{{ AgendaPublica.nome }} </h2>
+			<p>{{ AgendaPublica.Compromisso | linebreaksbr }}</p>
+			<p>{{ AgendaPublica.Data | linebreaksbr }}</p>
+			<br>
+		</div>
+	{% endif %}
+{% endfor %}
